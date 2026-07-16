@@ -9,10 +9,10 @@ public abstract class ProductJpTempl implements ProductProcessor {
     public void register(Product product) {
         System.out.println("JP Product start and do before");
 
-        business();
+        business(product);
 
         System.out.println("JP Product end and do after");
     }
 
-    public abstract void business();
+    public abstract void business(Product product);
 }

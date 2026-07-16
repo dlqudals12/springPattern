@@ -9,10 +9,10 @@ public abstract class ProductKrTempl implements ProductProcessor {
     public void register(Product product) {
         System.out.println("KR Product start and do before");
 
-        business();
+        business(product);
 
         System.out.println("KR Product end and do after");
     }
 
-    public abstract void business();
+    public abstract void business(Product product);
 }

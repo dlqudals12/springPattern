@@ -17,6 +17,9 @@ import java.util.Map;
 @Configuration
 public class CustomBeanConfig {
 
+    /**
+     * 각 마켓별 processor template 등록
+     */
     @Bean
     public Map<Product.MallType, ProductProcessor> productProcessor() {
         Map<Product.MallType, ProductProcessor> productProcessor = new HashMap<>();

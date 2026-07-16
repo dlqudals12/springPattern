@@ -9,10 +9,10 @@ public abstract class ProductGlobalTempl implements ProductProcessor {
     public void register(Product product) {
         System.out.println("Global Product start and do before");
 
-        business();
+        business(product);
 
         System.out.println("Global Product end and do after");
     }
 
-    public abstract void business();
+    public abstract void business(Product product);
 }
